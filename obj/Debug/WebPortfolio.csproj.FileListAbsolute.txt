@@ -72,7 +72,6 @@ C:\Users\albi1\Dropbox\C#\WebPortfolio\bin\System.Web.WebPages.Razor.xml
 C:\Users\albi1\Dropbox\C#\WebPortfolio\bin\Newtonsoft.Json.xml
 C:\Users\albi1\Dropbox\C#\WebPortfolio\bin\Antlr3.Runtime.pdb
 C:\Users\albi1\Dropbox\C#\WebPortfolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.AssemblyReference.cache
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.CoreCompileInputs.cache
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.CopyComplete
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.dll

@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/all")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body class="container" style="background-color : black">
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -23,18 +24,32 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Test", "Test", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
+    <div class="main-container" style="background-color : black">
+        
+            @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
-
+    <!-- Footer -->
+    <footer class="container" style="background-color : black">
+        <svg height="10px" width="100%">
+            <defs>
+                <linearGradient id="GradientStroke">
+                    <stop class="stop1" offset="0" stop-color="#7fa16d">
+                        <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinte" />
+                    </stop>    
+                </linearGradient>
+         
+            </defs>
+           <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
+        </svg>
+        <h2 class="text-center" style="color:antiquewhite"> Technical skills can always be taught but the resilience is already there.</h2>
+    </footer>
+    <!-- Footer -->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

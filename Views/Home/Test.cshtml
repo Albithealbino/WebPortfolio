@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+}
+<head>
+    <script src="~/Scripts/d3.min.js"></script>
+    
+</head>
+
+<body>
+    <h1>D3 Tutorial</h1>
+    <p> This is the first paragraph</p>
+    <p> This is the second paragraph</p>
+    <svg id="barChart"></svg>
+
+    <script>
+
+
+        d3.select("p").style("color", "green");
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("width", 300)
+            .attr("height", 200)
+            .style("background-color", "lightgrey");
+
+
+        var data = [
+            {
+                Year: "2018",
+                Promotions: 3
+            }, {
+                Year: "2019",
+                Promotions: 2
+            }, {
+                Year: "2020",
+                Promotions: 3
+            }, {
+                Year: "2021",
+                Promotions: 1
+            }, {
+                Year: "2022",
+                Promotions: 1
+            }, {
+                Year: "2023",
+                Promotions: 0
+            }];
+
+
+        var margin = {
+            top: 20,
+            right: 20,
+            bottom: 50,
+            left: 40
+        },
+            width = 460 - margin.left - margin.right,
+            height = 460 - margin.top - margin.bottom;
+
+        var barGraph = d3.select("#barChart")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        //X axis
+
+        var x = d3.scaleBand()
+            .range([0, width])
+            .domain(data.map(function (d) { return d.Year };))
+                                    .padding(0.2);
+
+        barGraph.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .attr("transform", "translate(-10,0)rotate(-45)")
+            .style("text-anchor", "end");
+
+        //Y axis
+        var y = d3.scaleLinear()
+            .domain([0, 13000])
+            .range([height, 0]);
+
+        barGraph.append("g").call(d3.axisLeft(y));
+
+        //Bars
+        barGraph.selectAll(".bar")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", function (d) { return x(d.Year); })
+            .attry("y", function (d) { return y(d.Promotions); })
+            .attr("width", x.bandwidth())
+            .attr("height", function (d) { return height - y(d.Promotions); })
+            .attr("fill", "#32a846");
+
+
+    </script>
+
+</body>
+
+
+
+
+
+

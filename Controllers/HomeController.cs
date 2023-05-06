@@ -26,5 +26,17 @@ namespace WebPortfolio.Controllers
 
             return View();
         }
+
+        public ActionResult Test()
+        {
+            ViewBag.Message = "A simple test page for data viz.";
+
+            return View();
+        }
+
+        public ActionResult Error()
+        {
+            return View();
+        }
     }
 }
