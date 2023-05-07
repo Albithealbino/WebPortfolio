@@ -76,3 +76,4 @@ C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.CoreCompile
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.CopyComplete
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.dll
 C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.pdb
+C:\Users\albi1\Dropbox\C#\WebPortfolio\obj\Debug\WebPortfolio.csproj.AssemblyReference.cache

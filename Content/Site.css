@@ -29,7 +29,7 @@ a.text-primary {
     color : white;
 }
 
-.main {
+div.main {
     box-sizing: border-box;
     display: block;
     position: relative;
@@ -41,38 +41,44 @@ a.text-primary {
   
 }
 
-.main-container {
+div.main-container {
     max-width: 100vw;
     max-height: 100vw;
     padding-left: 50px;
     padding-right: 50px;
-    position: center;
+    position: absolute;
     box-sizing:border-box;
     justify-content: center;
     
 }
 
-.main-container-inner {
-    padding: 20px;
-    position: relative;
+div.main-container-inner {
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    
 }
 
-.inner-container {
+
+
+div.inner-inner {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
     user-select: none;
     background: #242b24;
     flex-basis: 100%;
     overflow: hidden;
     position: absolute;
+    justify-content:center;
 }
+
+
 
 footer {
-    padding-top: 100px;
-}
-
-.main-container-inner .svgTop {
-    position: fixed;
-    bottom: 0px;
-    left:0px;
+    padding-top: 20px;
+    background-color: #242b24;
 }
 
 
