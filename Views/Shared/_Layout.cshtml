@@ -8,7 +8,7 @@
     @Styles.Render("~/Content/all")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="container" style="background-color: #242b24">
+<body class="container" >
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -30,28 +30,28 @@
         </div>
     </div>
     <div class="main">
-    
-
+        
             @RenderBody()
-  
+
     </div>
-    
     <!-- Footer -->
     <footer class="footer">
-
         <svg height="10px" width="100%">
             <defs>
                 <linearGradient id="GradientStroke">
                     <stop class="stop1" offset="0" stop-color="#7fa16d">
                         <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinte" />
-                    </stop>
+                    </stop>    
                 </linearGradient>
+         
             </defs>
-            <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
+           <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
         </svg>
-        <h4 class="text-center" style="color:antiquewhite"> Technical skills can always be taught but the resilience is already there.</h4>
+        <h2 class="text-center" style="color:antiquewhite"> Footer by-line.</h2>
     </footer>
     <!-- Footer -->
+
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
