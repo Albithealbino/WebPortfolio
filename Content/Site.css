@@ -32,26 +32,45 @@ a.text-primary {
     color : white;
 }
 
-div.main {
-    box-sizing: border-box;
-    display: block;
-    position: center;
-    height: 80%;
-    width:100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow:inherit;
-    justify-content: center;
-    background-color: #ebc588;
-    backdrop-filter: opacity(80%);
+.text-primary {
+    text-decoration-color: white;
 }
 
+.main {
+    margin: 50px auto;
+    position: relative;
+    height: 80%;
+    width: 100%;    
+    background: hsla(0, 0%, 100%, .3);
+    justify-content: center;
+    box-shadow: 5px 3px 30px black;
+    overflow: hidden;
+    border-radius: 5px 5px;
+    backdrop-filter: invert();
+}
+
+.main-container {
+    padding: 20px;
+    border-top-style: inset;
+    border-top-color: green;
+    border-top-width: 5px;
+    border-bottom-style: inset;
+    border-bottom-color: green;
+    border-bottom-width: 5px;
+    border-right-style: inset;
+    border-right-color: greenyellow;
+    border-right-width: 5px;
+    border-left-style: inset;
+    border-left-color: greenyellow;
+    border-left-width: 5px;
+    border-radius: 5px 5px;
+    text-decoration-color: white;
+}
 
 
 footer {
     padding-top: 20px;
+    backdrop-filter: blur(10px);
 }
 
 

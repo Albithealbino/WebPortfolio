@@ -30,26 +30,28 @@
         </div>
     </div>
     <div class="main">
-        
+        <div class="main-container">
             @RenderBody()
+            <!-- Footer -->
+            <footer class="footer">
+                <svg height="10px" width="100%">
+                    <defs>
+                        <linearGradient id="GradientStroke">
+                            <stop class="stop1" offset="0" stop-color="#7fa16d">
+                                <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinte" />
+                            </stop>
+                        </linearGradient>
 
+                    </defs>
+                    <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
+                </svg>
+                <h2 class="text-center" style="color:antiquewhite"> Footer by-line.</h2>
+            </footer>
+            <!-- Footer -->
+        </div>
+     
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-        <svg height="10px" width="100%">
-            <defs>
-                <linearGradient id="GradientStroke">
-                    <stop class="stop1" offset="0" stop-color="#7fa16d">
-                        <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinte" />
-                    </stop>    
-                </linearGradient>
-         
-            </defs>
-           <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
-        </svg>
-        <h2 class="text-center" style="color:antiquewhite"> Footer by-line.</h2>
-    </footer>
-    <!-- Footer -->
+    
 
 
     @Scripts.Render("~/bundles/jquery")
