@@ -9,26 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body class="container" >
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Test", "Test", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   
     <div class="main">
         <div class="main-container">
             @RenderBody()
@@ -38,14 +19,14 @@
                     <defs>
                         <linearGradient id="GradientStroke">
                             <stop class="stop1" offset="0" stop-color="#7fa16d">
-                                <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinte" />
+                                <animate attributeName="stop-color" values="#7fa16d;#6aabab;#734ab0;#6aabab;#7fa16d" dur="5s" repeatCount="indefinite" />
                             </stop>
                         </linearGradient>
 
                     </defs>
                     <rect width="100%" height="5px" rx="5px" ry="5px" style="fill: url(#GradientStroke); stroke-width:10 " />
                 </svg>
-                <h2 class="text-center" style="color:antiquewhite"> Footer by-line.</h2>
+                <h2 style="font-size: 15pt; text-align:center;"> Things I don't know now are simply joys I am yet to experience.</h2>
             </footer>
             <!-- Footer -->
         </div>
