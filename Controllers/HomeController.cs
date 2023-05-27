@@ -15,7 +15,7 @@ namespace WebPortfolio.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "About Floss Flew.";
 
             return View();
         }
@@ -23,13 +23,6 @@ namespace WebPortfolio.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult Test()
-        {
-            ViewBag.Message = "A simple test page for data viz.";
 
             return View();
         }

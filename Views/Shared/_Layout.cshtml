@@ -7,12 +7,39 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/all")
     @Scripts.Render("~/bundles/modernizr")
+   
 </head>
 <body class="container" >
    
     <div class="main">
         <div class="main-container">
-            @RenderBody()
+
+            <h1 class="header-main"> Welcome to FlossFlew</h1>
+            <svg height="10px" width="100%">
+                <rect width="100%" height="5px" style="fill: #020a36; stroke-width:10 " />
+            </svg>
+            <div class="col-md-9">              
+                @RenderBody()
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <h4 class="header-main"> Navigation</h4>                   
+                    @Html.ActionLink("Home", "Index", "Home", new { Style = "color:black; font-family: 'Eternal Knight Laser';" })
+                   <hr>
+                </div>
+                <div class="row">                    
+                    @Html.ActionLink("About", "About", "Home", new { Style = "color:black; font-family: 'Eternal Knight Laser';" })    
+                    <hr>
+                </div>
+                <div class="row">
+
+                    @Html.ActionLink("Contact", "Contact", "Home", new { Style = "color:black; font-family: 'Eternal Knight Laser';" })
+                    <hr>
+
+                </div>
+              
+
+            </div>
             <!-- Footer -->
             <footer class="footer">
                 <svg height="10px" width="100%">
@@ -33,8 +60,6 @@
      
     </div>
     
-
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

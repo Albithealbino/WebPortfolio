@@ -1,7 +1,16 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+<div>
+
+    <div id="my_dataviz"></div>
+</div>
+
+@section scripts
+{
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type ="text/javascript"src=@Url.Content("~/Scripts/BarGraph.js")></script>
+}
+
